@@ -1,0 +1,115 @@
+    1  nmcli
+    2  ping -c 3 1.1.1.1
+    3  exit
+    4  nmcli
+    5  sudo -i
+    6  podman -v
+    7  ll /opt/
+    8  podman info
+    9  clear
+   10  podman info | grep stor
+   11  cat /home/sysadmin/.config/containers/storage.conf
+   12  touch /home/sysadmin/.config/containers/storage.conf
+   13  mkdir /opt/storage
+   14  sudo mkdir /opt/storage
+   15  sudo chown -R sysadmin:sysadmin /opt/storage/
+   16  ll /opt/
+   17  ll /opt/storage/
+   18  ls -aghl /opt/storage/
+   19  mkdir /home/sysadmin/.config/containers/
+   20  touch /home/sysadmin/.config/containers/storage.conf
+   21  nano /home/sysadmin/.config/containers/storage.conf
+   22  cat /etc/passwd
+   23  nano /home/sysadmin/.config/containers/storage.conf
+   24  clear
+   25  podman info | grep store
+   26  podman info | grep stor
+   27  dnf search fuse
+   28  dnf install fuse-overlayfs
+   29  sudo dnf install fuse-overlayfs
+   30  clear
+   31  podman info
+   32* clear
+   33  podman info | grep stor
+   34  podman ps
+   35  cd /opt/
+   36  ll
+   37  cd storage/
+   38  ll
+   39  clear
+   40  mkdir compose
+   41  ll
+   42  cd compose/
+   43  clear
+   44  ll
+   45  history
+   46  sudo -i
+   47  clear
+   48  podman ps
+   49  ll
+   50  export TZ=$(timedatectl show --value --property=Timezone)
+   51  echo $TZ
+   52  nano haproxy.cfg
+   53  nano loki-config.yaml
+   54  nano podman-compose.yaml
+   55  nano syslog-ng.conf
+   56  ll
+   57  podman compose up -d
+   58  podman network create --driver bridge --subnet 10.10.90.0/24 --gateway 10.10.90.1 public_net
+   59  podman network create --driver bridge --subnet 10.10.91.0/24 --gateway 10.10.91.1 --internal private_net
+   60  clear
+   61  podman compose up -d
+   62  systemctl status podman-compose.yaml
+   63  systemctl status podman
+   64  ll /usr/lib/systemd/
+   65  ll /usr/lib/systemd/system
+   66  clear
+   67  echo net.ipv4.ip_unprivileged_port_start=21 > /usr/lib/sysctl.d/90-unprivileged-ports.conf
+   68  sudo echo net.ipv4.ip_unprivileged_port_start=21 > /usr/lib/sysctl.d/90-unprivileged-ports.conf
+   69  sudo bash -c "echo net.ipv4.ip_unprivileged_port_start=21 > /usr/lib/sysctl.d/90-unprivileged-ports.conf"
+   70  clear
+   71  podman compose down
+   72  podman compose up -d
+   73  systemctl daemon-reload
+   74  systemctl -p
+   75  sysctl -p
+   76  podman compose down
+   77  podman compose up -d
+   78  sudo sysctl -p
+   79  podman compose down
+   80  sudo rm /usr/lib/sysctl.d/90-unprivileged-ports.conf
+   81  sudo bash -c "echo net.ipv4.ip_unprivileged_port_start=21 > /etc/sysctl.d/90-unprivileged-ports.conf"
+   82  sudo sysctl -p
+   83  podman compose up -d
+   84  sudo rm /etc/sysctl.d/90-unprivileged-ports.conf
+   85  clear
+   86  cat /etc/sysctl.conf
+   87  echo text > text
+   88  cat text
+   89  echo text >> text
+   90  cat text
+   91  rm text
+   92  sudo bash -c "echo net.ipv4.ip_unprivileged_port_start=21 >> /etc/sysctl.conf"
+   93  sudo sysctl -p
+   94  podman compose down
+   95  podman ps
+   96  podman compose up -d
+   97  clear
+   98  podman ps
+   99  clear
+  100  podman ps
+  101  watch podman ps
+  102  clear
+  103  podman ps
+  104  ss -tlpn
+  105  ss -tlpnu
+  106  firewall-cmd --list-all
+  107  sudo firewall-cmd --list-all
+  108  ip a
+  109  sudo firewall-cmd --zone=public --add-port=3000/tcp
+  110  sudo firewall-cmd --zone=public --add-port=3100/tcp
+  111  sudo firewall-cmd --zone=public --add-port=514/tcp
+  112  sudo firewall-cmd --zone=public --add-port=514/udp
+  113  sudo firewall-cmd --runtime-to-permanent
+  114  ршы
+  115  history
